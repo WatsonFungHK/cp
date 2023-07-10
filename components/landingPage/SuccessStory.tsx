@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, Grid } from "@mui/material";
 
 const SuccessStory = () => {
   return (
@@ -88,6 +88,68 @@ const SuccessStory = () => {
           />
         </Box>
       </Box>
+      <Grid container spacing={"16px"}>
+        <Grid item sm={12} md={6}>
+          <Stack direction={"row"}>
+            <Box
+              sx={{
+                backgroundColor: "#7352ff",
+                color: "white",
+                borderRadius: "50%",
+                width: "60px",
+                height: "60px",
+                minWidth: "60px",
+                minHeight: "60px",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                marginRight: "32px",
+              }}
+            >
+              <Typography>1</Typography>
+            </Box>
+            <Stack spacing="14px">
+              <Typography variant="h5">Increasing product inventory</Typography>
+              <Typography variant="body1">
+                Using their growth capital from Choco Up to pay for product
+                inventory helped increase their sales and improved their profit
+                margins.
+              </Typography>
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item sm={12} md={6}>
+          <Stack direction={"row"}>
+            <Box
+              sx={{
+                backgroundColor: "#7352ff",
+                color: "white",
+                borderRadius: "50%",
+                width: "60px",
+                height: "60px",
+                minWidth: "60px",
+                minHeight: "60px",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                marginRight: "32px",
+              }}
+            >
+              <Typography>2</Typography>
+            </Box>
+            <Stack spacing="14px">
+              <Typography variant="h5">
+                Building a strong women's brand
+              </Typography>
+              <Typography variant="body1">
+                Creating an activewear brand that catered to Asian women's
+                bodies proved to be a great success as they are now part of the
+                Love, Bonito family.
+              </Typography>
+            </Stack>
+          </Stack>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
