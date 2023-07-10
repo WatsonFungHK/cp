@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutTheFold from "../components/landingPage/AboutTheFold";
 import UnlockBusiness from "../components/landingPage/UnlockBusiness";
-import SuccessStory from "../components/landingPage/SucessStory";
+import SuccessStory from "../components/landingPage/SuccessStory";
 import { Box } from "@mui/material";
 
 export default function Home() {
