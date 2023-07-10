@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import AboutTheFold from "../components/landingPage/AboutTheFold";
 import UnlockBusiness from "../components/landingPage/UnlockBusiness";
 import SuccessStory from "../components/landingPage/SuccessStory";
+import Testimonials from "../components/landingPage/Testimonials";
 import { Box } from "@mui/material";
 
 export default function Home() {
@@ -27,9 +28,10 @@ export default function Home() {
           },
         }}
       >
-        <AboutTheFold />
+        {/* <AboutTheFold />
         <UnlockBusiness />
-        <SuccessStory />
+        <SuccessStory /> */}
+        <Testimonials />
       </Box>
       <Footer />
     </Box>
