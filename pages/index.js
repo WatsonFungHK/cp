@@ -21,7 +21,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat,no-repeat",
           backgroundSize: "auto,auto",
           "> *": {
-            padding: "0 40px",
+            py: "80px",
           },
         }}
       >

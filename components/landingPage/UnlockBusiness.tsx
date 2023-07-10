@@ -5,7 +5,6 @@ const UnlockBusiness = () => {
   return (
     <Stack
       sx={{
-        py: "80px",
         px: "80px",
       }}
       spacing={"16px"}

@@ -6,7 +6,6 @@ const AboutTheFold = () => {
     <Stack
       sx={{
         height: "100vh",
-        marginTop: "80px",
       }}
       direction="row"
       alignItems={"center"}
