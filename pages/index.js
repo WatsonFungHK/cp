@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutTheFold from "../components/landingPage/AboutTheFold";
 import UnlockBusiness from "../components/landingPage/UnlockBusiness";
+import SuccessStory from "../components/landingPage/SucessStory";
 import { Box } from "@mui/material";
 
 export default function Home() {
@@ -21,12 +22,14 @@ export default function Home() {
           backgroundRepeat: "no-repeat,no-repeat",
           backgroundSize: "auto,auto",
           "> *": {
-            py: "80px",
+            p: "80px 80px 0",
+            margin: "0 auto",
           },
         }}
       >
-        {/* <AboutTheFold /> */}
+        <AboutTheFold />
         <UnlockBusiness />
+        <SuccessStory />
       </Box>
       <Footer />
     </Box>

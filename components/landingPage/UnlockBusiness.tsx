@@ -1,31 +1,34 @@
 import React from "react";
-import { Typography, Stack, Grid } from "@mui/material";
+import { Typography, Stack, Grid, Box } from "@mui/material";
 
 const UnlockBusiness = () => {
   return (
-    <Stack
-      sx={{
-        px: "80px",
-      }}
-      spacing={"16px"}
-    >
+    <Box>
+      <Typography
+        variant="h4"
+        sx={{
+          textAlign: "center",
+          px: "80px",
+        }}
+      >
+        Unlock
+        <Box
+          component={"span"}
+          sx={{
+            color: "#7352ff",
+          }}
+        >
+          {" "}
+          Business Growth
+        </Box>
+      </Typography>
       <Stack
         sx={{
           textAlign: "center",
+          px: "80px",
         }}
         spacing={"16px"}
       >
-        <Typography variant="h2" component={"span"}>
-          Unlock
-          <Stack
-            component={"span"}
-            sx={{
-              color: "#7352ff",
-            }}
-          >
-            business growth
-          </Stack>
-        </Typography>
         <Typography variant="body1">
           Manage your cash flow and reach business milestones with accessible
           growth capital. It's e-commerce funding that's fast, flexible and
@@ -142,7 +145,7 @@ const UnlockBusiness = () => {
           </Stack>
         </Grid>
       </Grid>
-    </Stack>
+    </Box>
   );
 };
 
