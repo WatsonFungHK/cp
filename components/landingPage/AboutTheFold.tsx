@@ -14,7 +14,7 @@ const AboutTheFold = () => {
       <Box
         sx={{
           "> *": {
-            marginBottom: "16px",
+            marginBottom: "1rem",
           },
         }}
       >
@@ -26,14 +26,33 @@ const AboutTheFold = () => {
         <Typography variant="body1">
           Say hello to revenue-based financing.
         </Typography>
-        <Button variant="contained">Get Funded</Button>
+        <Button
+          sx={{
+            backgroundImage: `linear-gradient(97deg,#7352ff,#16cbe1)`,
+            color: "white",
+            borderRadius: "5rem",
+          }}
+        >
+          Get Funded
+        </Button>
       </Box>
-      <Hidden smDown>
+      <Box
+        sx={{
+          width: "60%",
+          maxWidth: "48rem",
+          paddingTop: "5%",
+          position: "absolute",
+          top: "auto",
+          bottom: "auto",
+          left: "auto",
+          right: "-5%",
+        }}
+      >
         <img
           src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6413b57f2810c50b8ed23301_Group%202389.svg"
-          width="50%"
+          width="100%"
         />
-      </Hidden>
+      </Box>
     </Stack>
   );
 };

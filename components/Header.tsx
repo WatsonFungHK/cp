@@ -3,16 +3,25 @@ import { Stack, Button, Link } from "@mui/material";
 
 const Header = () => {
   return (
-    <div>
+    <Stack
+      sx={{
+        padding: "0 40px",
+      }}
+    >
       <Stack
         direction={"row"}
         justifyContent={"space-between"}
         sx={{
-          padding: "8px 40px",
+          margin: "8px 40px",
           position: "fixed",
           top: 0,
+          bottom: "auto",
+          left: 0,
+          right: "auto",
           backdropFilter: "blur(5px)",
           backgroundColor: "transparent",
+          zIndex: 999,
+          width: "100%",
         }}
       >
         <img
@@ -39,7 +48,7 @@ const Header = () => {
 
         <Button variant="contained">Get Funded</Button>
       </Stack>
-    </div>
+    </Stack>
   );
 };
 

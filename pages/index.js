@@ -3,11 +3,16 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutTheFold from "../components/landingPage/AboutTheFold";
+import UnlockBusiness from "../components/landingPage/UnlockBusiness";
 import { Box } from "@mui/material";
 
 export default function Home() {
   return (
-    <div>
+    <Box
+      sx={{
+        boxSizing: "border-box",
+      }}
+    >
       <Header />
       <Box
         sx={{
@@ -15,11 +20,15 @@ export default function Home() {
           backgroundPosition: "100% 0,0 0",
           backgroundRepeat: "no-repeat,no-repeat",
           backgroundSize: "auto,auto",
+          "> *": {
+            padding: "0 40px",
+          },
         }}
       >
-        <AboutTheFold />
+        {/* <AboutTheFold /> */}
+        <UnlockBusiness />
       </Box>
       <Footer />
-    </div>
+    </Box>
   );
 }
