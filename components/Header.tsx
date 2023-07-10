@@ -9,6 +9,10 @@ const Header = () => {
         justifyContent={"space-between"}
         sx={{
           padding: "8px 40px",
+          position: "fixed",
+          top: 0,
+          backdropFilter: "blur(5px)",
+          backgroundColor: "transparent",
         }}
       >
         <img
