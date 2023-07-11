@@ -6,7 +6,7 @@ const Footer = () => {
     <Stack
       sx={{
         backgroundColor: "#061849",
-        padding: "0 40px",
+        padding: "0 40px 20px",
         color: "white",
       }}
     >

@@ -35,30 +35,26 @@ const SuccessStory = () => {
       </Typography>
       <Box
         sx={{
-          height: "553px",
           border: `30px solid #fff`,
           borderRadius: "50px",
           justifyContent: "center",
           alignItems: "center",
           marginBottom: "60px",
           display: "flex",
-          position: "relative",
+          posiheight: "553px",
+          tion: "relative",
           overflow: "hidden",
           boxShadow: `0 30px 90px rgba(159,159,159,.15)`,
         }}
       >
-        <Box
-          component={"img"}
+        <img
+          width="100%"
+          height={"auto"}
           src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak.jpg"
           loading="lazy"
           sizes="(max-width: 479px) 90vw, (max-width: 767px) 91vw, (max-width: 991px) 90vw, (max-width: 1439px) 88vw, 1010px"
-          srcset="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-500.jpg 500w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-800.jpg 800w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak.jpg 1280w"
+          // srcset="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-500.jpg 500w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-800.jpg 800w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak.jpg 1280w"
           alt=""
-          sx={{
-            width: "100%",
-            height: "auto",
-            objectFit: "cover",
-          }}
         />
         <Box
           component={"a"}
@@ -89,7 +85,7 @@ const SuccessStory = () => {
           />
         </Box>
       </Box>
-      <Grid container spacing={"16px"}>
+      <Grid container spacing={"32px"}>
         <Grid item sm={12} md={6}>
           <Stack direction={"row"}>
             <Box

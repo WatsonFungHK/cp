@@ -43,7 +43,7 @@ const Testimonials = () => {
   return (
     <Box
       sx={{
-        paddingBottom: "48px",
+        marginBottom: "48px",
       }}
     >
       <Typography

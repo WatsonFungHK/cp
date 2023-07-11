@@ -6,10 +6,14 @@ const UnlockBusiness = () => {
     <Box>
       <Typography
         variant="h4"
-        sx={{
+        sx={(theme) => ({
           textAlign: "center",
-          px: "80px",
-        }}
+          px: "120px",
+          mb: "16px",
+          [theme.breakpoints.down("sm")]: {
+            px: "20px",
+          },
+        })}
       >
         Unlock
         <Box
@@ -23,21 +27,28 @@ const UnlockBusiness = () => {
         </Box>
       </Typography>
       <Stack
-        sx={{
+        sx={(theme) => ({
           textAlign: "center",
-          px: "80px",
-        }}
+          px: "120px",
+          [theme.breakpoints.down("sm")]: {
+            px: "20px",
+          },
+        })}
         spacing={"16px"}
       >
-        <Typography variant="body1">
+        <Typography variant="body1" mb={"40px"}>
           Manage your cash flow and reach business milestones with accessible
           growth capital. It's e-commerce funding that's fast, flexible and
           founder-friendly.
         </Typography>
       </Stack>
-      <img
+      <Box
+        component={"img"}
         src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/64916d3a70e6f03c6d360e10_RBF_7-p-2000.webp"
-        width="100%"
+        sx={{
+          width: "100%",
+          mb: "32px",
+        }}
       />
       <Grid container>
         <Grid item xs={12} sm={6}>

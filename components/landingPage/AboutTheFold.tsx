@@ -4,26 +4,29 @@ import { Box, Stack, Typography, Grid, Hidden, Button } from "@mui/material";
 const AboutTheFold = () => {
   return (
     <Stack
-      sx={{
+      sx={(theme) => ({
         height: "100vh",
-      }}
+      })}
       direction="row"
       alignItems={"center"}
+      spacing={2}
     >
       <Box
-        sx={{
-          "> *": {
-            marginBottom: "1rem",
+        sx={(theme) => ({
+          // 40% of the screen width when screen is over md
+          [theme.breakpoints.up("md")]: {
+            width: "50%",
           },
-        }}
+        })}
       >
-        <Typography variant="h4">Choco Up</Typography>
-        <Typography variant="body1">
+        <Typography variant="h4" mb={"16px"}>
+          Choco Up
+        </Typography>
+        <Typography variant="body1" mb={"16px"}>
           Helping e-commerce brands grow by providing easy access to working
           capital that's flexible and non-dilutive.
-        </Typography>
-        <Typography variant="body1">
-          Say hello to revenue-based financing.
+          <br />
+          <br /> Say hello to revenue-based financing.
         </Typography>
         <Button
           sx={{
@@ -35,23 +38,25 @@ const AboutTheFold = () => {
           Get Funded
         </Button>
       </Box>
-      <Box
-        sx={{
-          width: "60%",
-          maxWidth: "48rem",
-          paddingTop: "5%",
-          position: "absolute",
-          top: "auto",
-          bottom: "auto",
-          left: "auto",
-          right: "-5%",
-        }}
-      >
-        <img
-          src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6413b57f2810c50b8ed23301_Group%202389.svg"
-          width="100%"
-        />
-      </Box>
+      <Hidden mdDown>
+        <Box
+          sx={{
+            width: "60%",
+            maxWidth: "48rem",
+            paddingTop: "5%",
+            position: "absolute",
+            top: "auto",
+            bottom: "auto",
+            left: "auto",
+            right: "-5%",
+          }}
+        >
+          <img
+            src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6413b57f2810c50b8ed23301_Group%202389.svg"
+            width="100%"
+          />
+        </Box>
+      </Hidden>
     </Stack>
   );
 };

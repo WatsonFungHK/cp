@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutTheFold from "../components/landingPage/AboutTheFold";
@@ -25,6 +24,7 @@ export default function Home() {
           "> *": {
             p: "80px 80px 0",
             margin: "0 auto",
+            boxSizing: "border-box",
           },
         }}
       >
