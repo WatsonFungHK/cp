@@ -53,7 +53,6 @@ const SuccessStory = () => {
           src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak.jpg"
           loading="lazy"
           sizes="(max-width: 479px) 90vw, (max-width: 767px) 91vw, (max-width: 991px) 90vw, (max-width: 1439px) 88vw, 1010px"
-          // srcset="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-500.jpg 500w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-800.jpg 800w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/6493d86f985d5fbc9677bff0_thumbnail_Cheak.jpg 1280w"
           alt=""
         />
         <Box

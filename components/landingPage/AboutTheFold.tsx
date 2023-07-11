@@ -1,19 +1,18 @@
 import React from "react";
-import { Box, Stack, Typography, Grid, Hidden, Button } from "@mui/material";
+import { Box, Stack, Typography, Hidden, Button } from "@mui/material";
 
 const AboutTheFold = () => {
   return (
     <Stack
-      sx={(theme) => ({
+      sx={{
         height: "100vh",
-      })}
+      }}
       direction="row"
       alignItems={"center"}
       spacing={2}
     >
       <Box
         sx={(theme) => ({
-          // 40% of the screen width when screen is over md
           [theme.breakpoints.up("md")]: {
             width: "50%",
           },

@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Stack,
-  Box,
   Button,
   Link,
   Hidden,
