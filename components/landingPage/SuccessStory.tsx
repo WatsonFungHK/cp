@@ -18,6 +18,7 @@ const SuccessStory = () => {
         variant="h4"
         sx={{
           textAlign: "center",
+          mb: "40px",
         }}
       >
         Maximise

@@ -25,18 +25,15 @@ interface User {
 
 const Testimonials = () => {
   const [data, setData] = useState<Array<User>>([]);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchApiData = async () => {
       try {
         const apiData = await fetchData("https://dummyjson.com/users?limit=6");
         setData(apiData.users);
-        setLoading(false);
       } catch (err) {
-        setError(err.message);
-        setLoading(false);
+        // TODO: handle error
+        console.log("err: ", err);
       }
     };
 
@@ -49,7 +46,15 @@ const Testimonials = () => {
         paddingBottom: "48px",
       }}
     >
-      <Typography variant="h5">Testimonials</Typography>
+      <Typography
+        variant="h4"
+        sx={{
+          textAlign: "center",
+          mb: "40px",
+        }}
+      >
+        Client Testimonials
+      </Typography>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -76,14 +81,18 @@ const Testimonials = () => {
                     width: "100%",
                     height: "150px",
                     backgroundColor: "white",
+                    margin: "16px 20px",
                     padding: "16px",
                     boxShadow: "0 0 20px -7px rgba(0,0,0,.2)",
                     borderRadius: "8px",
+                    ":hover": {
+                      boxShadow: "0 0 20px 2px rgba(0,0,0,.2)",
+                    },
                   }}
                 >
                   <Typography variant="body1">{user.email}</Typography>
                   <Typography variant="body1">
-                    {user.address.address}
+                    {`"${user.address.address}"`}
                   </Typography>
                 </Stack>
               </SwiperSlide>

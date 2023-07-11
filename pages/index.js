@@ -28,9 +28,9 @@ export default function Home() {
           },
         }}
       >
-        {/* <AboutTheFold />
+        <AboutTheFold />
         <UnlockBusiness />
-        <SuccessStory /> */}
+        <SuccessStory />
         <Testimonials />
       </Box>
       <Footer />
